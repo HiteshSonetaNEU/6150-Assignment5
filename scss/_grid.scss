@@ -1,0 +1,17 @@
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: space-around;
+  
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }

@@ -1,0 +1,26 @@
+$primary-color: #333;
+$secondary-color: #0066ff;
+
+// Function to lighten colors
+@function lighten-color($color, $amount) {
+    @return lighten($color, $amount);
+  }
+
+%section-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  } 
+
+  .heading {
+    @extend %section-heading;
+  }  
+
+@mixin button-shared {
+    display: inline-block; 
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: $secondary-color;
+    color: #{lighten-color($secondary-color, 40%)}; 
+    text-decoration: none;
+  }

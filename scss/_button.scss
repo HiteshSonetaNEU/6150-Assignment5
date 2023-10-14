@@ -1,0 +1,10 @@
+@import './config';
+
+
+.button {
+    @include button-shared;
+  
+    &:hover {
+      opacity: 0.8;
+    }
+  }

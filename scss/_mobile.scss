@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+  
+    .laptops {
+      display: block;  
+    }
+  
+    .laptops article {
+      margin: 20px 0;
+    }
+  
+  }
